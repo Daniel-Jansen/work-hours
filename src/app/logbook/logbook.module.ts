@@ -2,18 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HoursComponent } from './hours/hours.component';
 import { HttpClientModule } from '@angular/common/http';
-import { EmployeeComponent } from './employee/employee.component';
-import { BossComponent } from './boss/boss.component';
-import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
 @NgModule({
   declarations: [
     HoursComponent,
-    EmployeeComponent,
-    BossComponent,
-    AdminComponent,
+    LoginComponent,
+    LogoutComponent,
   ],
   imports: [
     CommonModule,
