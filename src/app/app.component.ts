@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { fadeInAboveAnimation, fadeInAnimation } from './animations';
 
 @Component({
   selector: 'app-root',
@@ -20,16 +21,7 @@ export class AppComponent {
   // users, roles, work hours, clock in/out, login/logout
 
   ngOnInit() {
-    
-
-    // makes toolbar fade in from above after the page loads
-    document.addEventListener("DOMContentLoaded", function() {
-      setTimeout(function() {
-        const toolbar: HTMLElement | null = document.getElementById("toolbar");
-        if (toolbar) {
-          toolbar.classList.add("!translate-y-0");
-        }
-      }, 100);
-    });
+    fadeInAboveAnimation();
+    fadeInAnimation();
   }
 }

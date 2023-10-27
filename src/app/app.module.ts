@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LogbookModule } from './logbook/logbook.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LogbookComponent } from './logbook/logbook.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LogbookComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LogbookModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
