@@ -4,6 +4,7 @@ import { HoursComponent } from './hours/hours.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { UserComponent } from './user/user.component';
 
 
 
@@ -12,6 +13,7 @@ import { LogoutComponent } from './logout/logout.component';
     HoursComponent,
     LoginComponent,
     LogoutComponent,
+    UserComponent,
   ],
   imports: [
     CommonModule,

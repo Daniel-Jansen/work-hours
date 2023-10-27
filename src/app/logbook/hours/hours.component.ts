@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-hours',
+  selector: 'hours',
   templateUrl: './hours.component.html',
   styleUrls: ['./hours.component.css']
 })

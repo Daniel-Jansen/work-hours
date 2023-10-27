@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'work-hours';
@@ -18,4 +18,18 @@ export class AppComponent {
 
   // what do i need:
   // users, roles, work hours, clock in/out, login/logout
+
+  ngOnInit() {
+    
+
+    // makes toolbar fade in from above after the page loads
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
+        const toolbar: HTMLElement | null = document.getElementById("toolbar");
+        if (toolbar) {
+          toolbar.classList.add("!translate-y-0");
+        }
+      }, 100);
+    });
+  }
 }

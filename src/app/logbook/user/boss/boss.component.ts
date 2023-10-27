@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-boss',
+  selector: 'boss',
   templateUrl: './boss.component.html',
   styleUrls: ['./boss.component.css']
 })
