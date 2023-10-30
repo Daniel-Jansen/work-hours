@@ -1,17 +1,81 @@
-<form action="" class="container grid gap-y-3 w-60" [formGroup]="loginForm" (ngSubmit)="$event.preventDefault(); submitForm()">
-    <div class="flex justify-between items-center">
-        <label for="username">Name:</label>
-        <input type="text" class="rounded-md shadow-md p-0.5" id="username" name="username" formControlName="senderName">
-    </div>
-    <div class="flex justify-between items-center">
-        <label for="email">Email:</label>
-        <input type="email" class="rounded-md shadow-md p-0.5" id="email" name="email" formControlName="senderEmail">
-    </div>
-    <div class="flex justify-between items-center">
-        <label for="password">Password:</label>
-        <input type="password" class="rounded-md shadow-md p-0.5" id="password" name="password" formControlName="senderPassword">
-    </div>
-    <div>
-        <button type="submit" class="bg-gray-200 rounded-md shadow-md px-4 py-1 hover:cursor-pointer hover:bg-gray-300 active:bg-gray-400" [disabled]="loginForm.invalid">Login</button>
-    </div>
+<form
+  action=""
+  class="container grid gap-y-3"
+  [formGroup]="loginForm"
+  (ngSubmit)="$event.preventDefault(); submitForm()"
+>
+  <div class="flex justify-between items-center">
+    <label for="firstname" class="pr-2">First&nbsp;Name:</label>
+    <input
+      type="text"
+      class="rounded-md shadow-md p-1"
+      id="firstname"
+      name="firstname"
+      formControlName="senderFirstName"
+      placeholder="John"
+    />
+  </div>
+
+
+  <div class="flex justify-between items-center">
+    <label for="middlename" class="pr-2">Infix/Middle&nbsp;Name:</label>
+    <input
+      type="text"
+      class="rounded-md shadow-md p-1"
+      id="middlename"
+      name="middlename"
+      formControlName="senderMiddleName"
+      placeholder="The"
+    />
+  </div>
+
+
+  <div class="flex justify-between items-center">
+    <label for="lastname" class="pr-2">Last&nbsp;Name:</label>
+    <input
+      type="text"
+      class="rounded-md shadow-md p-1"
+      id="lastname"
+      name="lastname"
+      formControlName="senderLastName"
+      placeholder="Doe"
+    />
+  </div>
+
+
+  <div class="flex justify-between items-center">
+    <label for="email" class="pr-2">Email:</label>
+    <input
+      type="email"
+      class="rounded-md shadow-md p-1"
+      id="email"
+      name="email"
+      formControlName="senderEmail"
+      placeholder="JohnDoe@gmail.com"
+    />
+  </div>
+
+
+  <div class="flex justify-between items-center">
+    <label for="password" class="pr-2">Password:</label>
+    <input
+      type="password"
+      class="rounded-md shadow-md p-1"
+      id="password"
+      name="password"
+      formControlName="senderPassword"
+      placeholder="password123"
+    />
+  </div>
+
+  
+  <div>
+    <button
+      type="submit"
+      class="bg-gray-200 rounded-md shadow-md px-4 py-1 hover:cursor-pointer hover:bg-gray-300 active:bg-gray-400"
+      [disabled]="loginForm.invalid"
+    >
+      Login
+    </button>
+  </div>
 </form>

@@ -9,6 +9,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class LogbookComponent {
   @Input() data: any[] = [];
+  currentYear: number = new Date().getFullYear();
 
   constructor(private productService: ProductService) {}
 

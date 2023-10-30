@@ -1,8 +1,65 @@
 [
-    {"name": "Voucher", "country": "Italy", "categories": "Games", "max": "1000", "price": 10},
-    {"name": "Car", "country": "Sweden", "categories": ["Vehicles", "Car"], "max": "10", "price": 10000},
-    {"name": "Plush", "country": "Netherlands", "categories": "Toys", "max": "200", "price": 30},
-    {"name": "Laptop", "country": "Germany", "categories": "Electronics", "max": "", "price": 850},
-    {"name": "Tank", "country": "France", "categories": "Military", "max": "2", "price": 15000000},
-    {"name": "Mouse", "country": "Germany", "categories": "Electronics", "max": "55", "price": 15}
+  {
+    "firstname": "Bob",
+    "middlename": "Bobbie",
+    "lastname": "Bobbert",
+    "email": "bob@gmail.com",
+    "password": "hi123",
+    "startdate": "2020-04-15T08:32:05.531Z",
+    "weekhours": 32,
+    "totalhours": 2268,
+    "role": "employee"
+  },
+  {
+    "firstname": "Amy",
+    "lastname": "Fisher",
+    "email": "amy@gmail.com",
+    "password": "hello123",
+    "startdate": "2022-08-30T08:32:05.531Z",
+    "weekhours": 12,
+    "totalhours": 164,
+    "role": "employee"
+  },
+  {
+    "firstname": "Freddy",
+    "middlename": "Van",
+    "lastname": "Houten",
+    "email": "freddy@outlook.com",
+    "password": "gutentag123",
+    "startdate": "2019-11-05T08:32:05.531Z",
+    "weekhours": 42,
+    "totalhours": 3064,
+    "role": "employee"
+  },
+  {
+    "firstname": "Bert",
+    "middlename": "William",
+    "lastname": "Francis",
+    "email": "bert@hotmail.com",
+    "password": "hallo123",
+    "startdate": "2021-07-29T08:32:05.531Z",
+    "weekhours": 42,
+    "totalhours": 1682,
+    "role": "employee"
+  },
+  {
+    "firstname": "Tom",
+    "lastname": "Trailer",
+    "email": "tom@yahoo.com",
+    "password": "hola123",
+    "startdate": "2023-07-08T08:32:05.531Z",
+    "weekhours": 8,
+    "totalhours": 88,
+    "role": "employee"
+  },
+  {
+    "firstname": "Gaby",
+    "lastname": "Lovely",
+    "email": "gaby@gmail.com",
+    "password": "labas123",
+    "startdate": "2018-12-10T08:32:05.531Z",
+    "weekhours": 0,
+    "totalhours": 10000,
+    "role": "boss"
+  }
 ]

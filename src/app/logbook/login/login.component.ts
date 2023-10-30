@@ -9,7 +9,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent {
 
   loginForm = new FormGroup({
-    senderName: new FormControl('', Validators.required),
+    senderFirstName: new FormControl('', Validators.required),
+    senderMiddleName: new FormControl(''),
+    senderLastName: new FormControl('', Validators.required),
     senderEmail: new FormControl('', [Validators.required, Validators.email]),
     senderPassword: new FormControl('', [Validators.required, Validators.minLength(8)]),
   });
