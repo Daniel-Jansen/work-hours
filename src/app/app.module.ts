@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { LogbookModule } from './logbook/logbook.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,7 @@ import { PageAccessDeniedComponent } from './page-access-denied/page-access-deni
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LogbookModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

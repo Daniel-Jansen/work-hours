@@ -32,6 +32,5 @@ export class LogbookComponent {
           this.data = [data];
         }
       });
-      console.log(this.data);
   }
 }

@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { UserComponent } from './user/user.component';
 import { LogbookComponent } from './logbook.component';
+import { AdminComponent } from './user/admin/admin.component';
+import { BossComponent } from './user/boss/boss.component';
+import { EmployeeComponent } from './user/employee/employee.component';
 
 
 
@@ -17,7 +20,10 @@ import { LogbookComponent } from './logbook.component';
     LoginComponent,
     LogoutComponent,
     UserComponent,
-    LogbookComponent  
+    AdminComponent,
+    BossComponent,
+    EmployeeComponent,
+    LogbookComponent,
   ],
   imports: [
     CommonModule,

@@ -6,7 +6,7 @@ export function fadeInAboveAnimation() {
             if (toolbar) {
                 toolbar.classList.add("!translate-y-0");
             }
-        }, 100);
+        }, 500);
     });
 }
 
@@ -18,6 +18,6 @@ export function fadeInAnimation() {
             if (main) {
                 main.classList.add("!opacity-100");
             }
-        }, 100);
+        }, 300);
     });
 }
