@@ -8,20 +8,25 @@
     <label for="firstname" class="pr-2">First&nbsp;Name:</label>
     <input
       type="text"
-      class="rounded-md shadow-md p-1"
+      class="rounded-md shadow-md p-1 px-2 border-red-500"
       id="firstname"
       name="firstname"
       formControlName="senderFirstName"
       placeholder="John"
     />
   </div>
+  <!--Error handling-->
+  <div class="mt-[-5px]" *ngIf="loginForm.get('senderFirstName')?.invalid && (loginForm.get('senderFirstName')?.dirty || loginForm.get('senderFirstName')?.touched)">
+    <small class="text-red-500 float-right" *ngIf="loginForm.get('senderFirstName')?.hasError('required')">This field is required.</small>
+  </div>
+  <!--End-->
 
 
   <div class="flex justify-between items-center">
     <label for="middlename" class="pr-2">Infix/Middle&nbsp;Name:</label>
     <input
       type="text"
-      class="rounded-md shadow-md p-1"
+      class="rounded-md shadow-md p-1 px-2"
       id="middlename"
       name="middlename"
       formControlName="senderMiddleName"
@@ -34,38 +39,55 @@
     <label for="lastname" class="pr-2">Last&nbsp;Name:</label>
     <input
       type="text"
-      class="rounded-md shadow-md p-1"
+      class="rounded-md shadow-md p-1 px-2"
       id="lastname"
       name="lastname"
       formControlName="senderLastName"
       placeholder="Doe"
     />
   </div>
+  <!--Error handling-->
+  <div class="mt-[-5px]" *ngIf="loginForm.get('senderLastName')?.invalid && (loginForm.get('senderLastName')?.dirty || loginForm.get('senderLastName')?.touched)">
+    <small class="text-red-500 float-right" *ngIf="loginForm.get('senderLastName')?.hasError('required')">This field is required.</small>
+  </div>
+  <!--End-->
 
 
   <div class="flex justify-between items-center">
     <label for="email" class="pr-2">Email:</label>
     <input
       type="email"
-      class="rounded-md shadow-md p-1"
+      class="rounded-md shadow-md p-1 px-2"
       id="email"
       name="email"
       formControlName="senderEmail"
       placeholder="johndoe@gmail.com"
     />
   </div>
+  <!--Error handling-->
+  <div class="mt-[-5px]" *ngIf="loginForm.get('senderEmail')?.invalid && (loginForm.get('senderEmail')?.dirty || loginForm.get('senderEmail')?.touched)">
+    <small class="text-red-500 float-right" *ngIf="loginForm.get('senderEmail')?.hasError('required')">This field is required.</small>
+    <small class="text-red-500 float-right" *ngIf="loginForm.get('senderEmail')?.hasError('email')">Please enter a valid e-mail address.</small>
+  </div>
+  <!--End-->
 
 
   <div class="flex justify-between items-center">
     <label for="password" class="pr-2">Password:</label>
     <input
       type="password"
-      class="rounded-md shadow-md p-1"
+      class="rounded-md shadow-md p-1 px-2"
       id="password"
       name="password"
       formControlName="senderPassword"
     />
   </div>
+  <!--Error handling-->
+  <div class="mt-[-5px]" *ngIf="loginForm.get('senderPassword')?.invalid && (loginForm.get('senderPassword')?.dirty || loginForm.get('senderPassword')?.touched)">
+    <small class="text-red-500 float-right" *ngIf="loginForm.get('senderPassword')?.hasError('required')">This field is required.</small>
+    <small class="text-red-500 float-right" *ngIf="loginForm.get('senderPassword')?.hasError('minlength')">Please enter a password longer than 8 characters.</small>
+  </div>
+  <!--End-->
 
 
   <div>
@@ -73,6 +95,7 @@
       type="submit"
       class="bg-gray-200 rounded-md shadow-md px-4 py-1 hover:cursor-pointer hover:bg-gray-300 active:bg-gray-400"
       [disabled]="loginForm.invalid"
+      [ngClass]="{'opacity-50 hover:bg-gray-200 active:bg-gray-200 hover:cursor-default': loginForm.invalid}"
     >
       Login
     </button>
