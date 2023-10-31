@@ -3,7 +3,7 @@
         <label for="firstname">First&nbsp;name: </label>
         <span id="firstname" name="firstname">{{ data[0]?.firstname }}</span>
     </div>
-    <div>
+    <div *ngIf="data[0]?.middlename !== undefined">
         <label for="middlename">Middle&nbsp;name: </label>
         <span id="middlename" name="middlename">{{ data[0]?.middlename }}</span>
     </div>
@@ -16,10 +16,15 @@
         <span id="email" name="email">{{ data[0]?.email }}</span>
     </div>
     <div>
+        <label for="role">Role: </label>
+        <span id="role" name="role">{{ data[0]?.role }}</span>
+    </div>
+    <div>
         <label for="hours">Total hours: </label>
         <span id="hours" name="hours">{{ data[0]?.totalhours }}</span>
     </div>
     <div>
-        <p id="year">{{ currentYear }}</p>
+        <label for="hours">Start date: </label>
+        <span id="hours" name="hours">{{ data[0]?.slicedDate }}</span>
     </div>
 </div>

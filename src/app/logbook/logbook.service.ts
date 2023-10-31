@@ -17,7 +17,7 @@ export class ProductService {
     };
   }
 
-  getProducts() {
+  getUserData() {
     let options = this.getStandardOptions();
 
     options.params = new HttpParams({

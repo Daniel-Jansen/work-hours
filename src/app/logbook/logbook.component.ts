@@ -9,14 +9,13 @@ import { catchError } from 'rxjs/operators';
 })
 export class LogbookComponent {
   @Input() data: any[] = [];
-  currentYear: number = new Date().getFullYear();
 
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
     // calls upon the service to get the data
     this.productService
-      .getProducts()
+      .getUserData()
       .pipe(
         catchError((error: any) => {
           alert(error.message);
@@ -31,6 +30,17 @@ export class LogbookComponent {
         } else {
           this.data = [data];
         }
+        this.data.forEach((data) => {
+          data.slicedDate = this.sliceDate(data.startdate);
+        });
       });
+  }
+
+  // slices the date to only get YYYY-MM-DD
+  public sliceDate(startDate: string): string {
+    if (startDate) {
+      return startDate.slice(0, 10);
+    }
+    return '';
   }
 }

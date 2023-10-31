@@ -18,7 +18,7 @@
       "password": "hello123",
       "startdate": "2022-08-30T08:32:05.531Z",
       "weekhours": 12,
-      "totalhours": 164,
+      "totalhours": 170,
       "role": "employee"
     },
     {
@@ -40,7 +40,7 @@
       "password": "hallo123",
       "startdate": "2021-07-29T08:32:05.531Z",
       "weekhours": 42,
-      "totalhours": 1682,
+      "totalhours": 1282,
       "role": "employee"
     },
     {
