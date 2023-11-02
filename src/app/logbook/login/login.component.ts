@@ -19,5 +19,4 @@ export class LoginComponent {
   submitForm() {
     console.log(this.loginForm.valid);
   }
-
 }

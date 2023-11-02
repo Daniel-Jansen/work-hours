@@ -4,7 +4,7 @@
         <span id="firstname" name="firstname">{{ data[0]?.firstname }}</span>
     </div>
     <div *ngIf="data[0]?.middlename !== undefined">
-        <label for="middlename">Middle&nbsp;name: </label>
+        <label for="middlename">Infix/Middle&nbsp;name: </label>
         <span id="middlename" name="middlename">{{ data[0]?.middlename }}</span>
     </div>
     <div>
@@ -25,6 +25,6 @@
     </div>
     <div>
         <label for="hours">Start date: </label>
-        <span id="hours" name="hours">{{ data[0]?.slicedDate }}</span>
+        <span id="hours" name="hours">{{ data[0]?.sliceddate }}</span>
     </div>
 </div>

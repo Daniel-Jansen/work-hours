@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProductService } from './logbook.service';
+import { DataService } from './logbook.service';
 import { catchError } from 'rxjs/operators';
 
 @Component({
@@ -10,11 +10,11 @@ import { catchError } from 'rxjs/operators';
 export class LogbookComponent {
   @Input() data: any[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     // calls upon the service to get the data
-    this.productService
+    this.dataService
       .getUserData()
       .pipe(
         catchError((error: any) => {
@@ -31,7 +31,7 @@ export class LogbookComponent {
           this.data = [data];
         }
         this.data.forEach((data) => {
-          data.slicedDate = this.sliceDate(data.startdate);
+          data.sliceddate = this.sliceDate(data.startdate);
         });
       });
   }

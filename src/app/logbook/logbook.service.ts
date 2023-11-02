@@ -5,7 +5,7 @@ import { catchError, throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class ProductService {
+export class DataService {
   constructor(private http: HttpClient) {}
 
   private getStandardOptions(): any {
@@ -43,7 +43,7 @@ export class ProductService {
 
     return throwError(
       () =>
-        new Error('Cannot retrieve wishes from the server. Please try again')
+        new Error('Cannot retrieve data from the server. Please try again')
     );
   }
 }

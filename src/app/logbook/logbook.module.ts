@@ -23,7 +23,6 @@ import { EmployeeComponent } from './user/employee/employee.component';
     AdminComponent,
     BossComponent,
     EmployeeComponent,
-    LogbookComponent,
   ],
   imports: [
     CommonModule,
@@ -31,7 +30,6 @@ import { EmployeeComponent } from './user/employee/employee.component';
     ReactiveFormsModule,
   ],
   exports: [
-    LogbookComponent,
   ]
 })
 export class LogbookModule { }

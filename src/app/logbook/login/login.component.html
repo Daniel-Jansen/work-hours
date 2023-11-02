@@ -95,7 +95,7 @@
       type="submit"
       class="bg-gray-200 rounded-md shadow-md px-4 py-1 hover:cursor-pointer hover:bg-gray-300 active:bg-gray-400"
       [disabled]="loginForm.invalid"
-      [ngClass]="{'opacity-50 hover:bg-gray-200 active:bg-gray-200 hover:cursor-default': loginForm.invalid}"
+      [ngClass]="{'opacity-40 hover:!bg-gray-200 active:!bg-gray-200 hover:!cursor-not-allowed': loginForm.invalid}"
     >
       Login
     </button>
